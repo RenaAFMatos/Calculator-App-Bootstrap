@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 200px;
+  background: linear-gradient(lime, cyan 90%);
+}
+
+#buttons {
+  padding: 0%;
+}
+
+.btn.col-3,
+.btn.col-6,
+.btn.col-9 {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 2rem;
+  outline: none;
+  border-radius: 0%;
+}
+
+.btn.col-3:hover,
+.btn.col-6:hover,
+.btn.col-9:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.col-12.col-lg-4.text-center {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.col-12.col-lg-4.text-center .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.col-12.col-lg-4.text-center .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
