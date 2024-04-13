@@ -11,7 +11,7 @@
 body {
   padding: 0;
   margin: 200px;
-  background: linear-gradient(lime, cyan 90%);
+  background: linear-gradient(to left, lime, cyan);
 }
 
 #buttons {
@@ -19,8 +19,7 @@ body {
 }
 
 .btn.col-3,
-.btn.col-6,
-.btn.col-9 {
+.btn.col-6 {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.75);
   font-size: 2rem;
@@ -29,8 +28,7 @@ body {
 }
 
 .btn.col-3:hover,
-.btn.col-6:hover,
-.btn.col-9:hover {
+.btn.col-6:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -42,6 +40,8 @@ body {
   justify-content: space-around;
   flex-direction: column;
   padding: 10px;
+  min-height: 105px;
+  max-height: 105px;
   word-wrap: break-word;
   word-break: break-all;
 }
